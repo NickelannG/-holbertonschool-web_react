@@ -32,3 +32,13 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+// Task 3
+// interface for the printTeacherFunction
+interface PrintTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+// printTeacher function that returns first letter of firtName and full lastName
+const printTeacher: PrintTeacherFunction = function (firstName: string, lastName: string): string {
+  return (firstName[0] + '.' + lastName)
+}
